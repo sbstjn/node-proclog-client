@@ -3,7 +3,6 @@ var remoteloggerConfig = {
   server: '127.0.0.1:7111'
 , application: '0x3'
 , user: null
-, userRemain: null
 };
 
 func_setServer = function(str) {
@@ -86,7 +85,6 @@ func_setUser = function(str, events) {
 
 func_unsetUser = function() {
   remoteloggerConfig.user = null;
-  remoteloggerConfig.userRemain = null;
 };
 
 exports.setServer = func_setServer;
